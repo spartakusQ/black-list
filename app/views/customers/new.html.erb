@@ -1,0 +1,22 @@
+<h1 >Добавление карточки покупателя.</h1>
+
+<%= form_with scope: :customer, url: customers_path, local: true do |form| %>
+  <p>
+    <%= form.label :name, 'Имя' %><br>
+    <%= form.text_field :title %>
+  </p>
+
+  <p>
+    <%= form.label :phone, 'Телефон' %><br>
+    <%= form.text_area :text %>
+  </p>
+
+  <p>
+    <%= form.label :description, 'Описание' %><br>
+    <%= form.text_area :text %>
+  </p>
+
+  <p>
+    <%= submit_tag("Добавить") %>
+  </p>
+<% end %>
